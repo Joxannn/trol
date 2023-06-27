@@ -1,1 +1,15 @@
-
+# STRONG HTACCESS PROTECTION
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+ order allow,deny
+ deny from all
+</Files>
+# SET INDEX OPTIONS
+IndexOptions Charset=UTF-8 IgnoreCase FoldersFirst NameWidth=* DescriptionWidth=* SuppressHTMLPreamble
+# SET DISPLAY ORDER
+IndexOrderDefault Descending Name
+# SPECIFY HEADER FILE
+HeaderName header.html
+# SPECIFY FOOTER FILE
+ReadmeName footer.html
+# IGNORE THESE FILES
+IndexIgnore header.html footer.html
