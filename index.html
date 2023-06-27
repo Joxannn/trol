@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <title>Oskar Archiwum</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        font-family: "Roboto", "sans-serif";
+        width: 100vw;
+        height: 100vh;
+        background-color: #0f0f0f;
+        align-items: center;
+        justify-content: center;
+      }
+
+      a {
+        text-decoration: none;
+        user-select: none;
+        font-size: 100px;
+        background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
+                    rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+        background-size: 600vw 600vw;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: slide 10s linear infinite forwards;
+      }
+
+      @keyframes slide {
+        0%{
+          background-position-x: 0vw;
+        }
+        100%{
+          background-position-x: 600vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="archiwum">ktntkot.xyz</a>
+  </body>
+</html>
